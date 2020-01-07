@@ -1,25 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+//Style
+import "./App.css";
+
+//Data
+import allBrewMethods from "./data";
+
+//Components
+import BrewingList from "./Components/BrewingList/index";
+import AboutPage from "./Components/AboutPage";
+import NavBar from "./Components/NavBar";
 
 function App() {
+  const [brewingMethods] = useState(allBrewMethods);
+  const [showHome, setShowHome] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App my-5">
+        <NavBar setShowHome={setShowHome} />
+        <div className="container">
+          {showHome ? (
+            <BrewingList brewingMethods={brewingMethods} />
+          ) : (
+            <AboutPage />
+          )}
+        </div>
+      </div>
+    </>
   );
 }
 
