@@ -17,8 +17,8 @@ function App() {
 
   return (
     <>
+      <NavBar setShowHome={setShowHome} />
       <div className="App my-5">
-        <NavBar setShowHome={setShowHome} />
         <div className="container">
           {showHome ? (
             <BrewingList brewingMethods={brewingMethods} />
