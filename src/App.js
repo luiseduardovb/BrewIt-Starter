@@ -18,6 +18,7 @@ function App() {
       <NavBar setShowHome={setShowHome} />
       <div className="App my-5">
         <div className="container">{showHome ? null : <AboutPage />}</div>
+
       </div>
     </>
   );
