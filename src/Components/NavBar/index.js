@@ -5,7 +5,11 @@ const Navbar = ({ setShowHome }) => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light bg-light"
-      style={{ borderBottom: "#282c34 solid 1px", paddingBottom: "100px" }}
+      style={{
+        borderBottom: "#282c34 solid 1px",
+        paddingBottom: "70px",
+        paddingTop: "50px"
+      }}
     >
       <button
         className="navbar-toggler"
