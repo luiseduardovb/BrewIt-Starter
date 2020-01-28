@@ -5,21 +5,22 @@ const Navbar = ({ setShowHome }) => {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-light bg-light"
-     style={{
+      style={{
         borderBottom: "#282c34 solid 1px",
         paddingBottom: "70px",
         paddingTop: "50px"
       }}
+    >
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        dataToggle="collapse"
+        dataTarget="#navbarNav"
+        ariaControls="navbarNav"
+        ariaExpanded="false"
+        ariaLabel="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span className="navbar-toggler-icon" />
       </button>
       <div id="navbarNav">
         <ul className="nav navbar-nav navbar-center">
