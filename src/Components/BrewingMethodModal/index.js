@@ -2,10 +2,10 @@ import React from "react";
 
 //Components
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
-import BrewingMethodDetails from "../BrewingMethodDetails";
 
 // Styling
 import "../../Modal.css";
+import AmountCalculator from "../AmountCalculator";
 
 const BrewingMethodModal = ({ brewingMethod, handleToggle, modalState }) => {
   return (
@@ -13,7 +13,7 @@ const BrewingMethodModal = ({ brewingMethod, handleToggle, modalState }) => {
       <ModalHeader toggle={handleToggle}></ModalHeader>
       <ModalBody>
         <ModalBody>
-          <BrewingMethodDetails brewingMethod={brewingMethod} />
+          <AmountCalculator brewingMethod={brewingMethod} />
         </ModalBody>
       </ModalBody>
       <ModalFooter>
