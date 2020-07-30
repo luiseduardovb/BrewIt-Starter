@@ -2,6 +2,7 @@ import React from "react";
 
 //Components
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import Timer from "../Timer";
 
 // Styling
 import "../../Modal.css";
@@ -14,6 +15,7 @@ const BrewingMethodModal = ({ brewingMethod, handleToggle, modalState }) => {
       <ModalBody>
         <ModalBody>
           <AmountCalculator brewingMethod={brewingMethod} />
+          <Timer brewingMethod={brewingMethod} />
         </ModalBody>
       </ModalBody>
       <ModalFooter>

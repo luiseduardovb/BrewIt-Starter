@@ -3,7 +3,7 @@ import React from "react";
 //Styling
 import "../../style.css";
 
-const BrewingMethodDetails = ({ brewingMethod }) => {
+const BrewingMethodDetails = ({ brewingMethod, grams, water }) => {
   return (
     <div className="wrapper-details">
       <div className="modal-box">
@@ -16,11 +16,11 @@ const BrewingMethodDetails = ({ brewingMethod }) => {
       </div>
       <div className="modal-box">
         <div>Grams of Coffee:</div> <br />
-        <div> {brewingMethod.default_grams}g</div>
+        <div> {grams}g</div>
       </div>
       <div className="modal-box">
         <div>Water:</div> <br />
-        <div> {brewingMethod.default_water}ml</div>
+        <div> {water}ml</div>
       </div>
     </div>
   );
